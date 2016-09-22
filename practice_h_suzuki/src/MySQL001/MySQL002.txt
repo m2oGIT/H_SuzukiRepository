@@ -1,0 +1,51 @@
+–â1
+MariaDB [(none)]> INSERT INTO moeiwast_eiwatest_DB01.test_table(INT_NUM,NAME_STR
+,DBL_NUM,CREATE_DATE) VALUES (1192,'—é–ØL‹C','539.02','2017/01/01');
+Query OK, 1 row affected (0.00 sec)
+
+MariaDB [(none)]>
+
+«ƒŒƒR[ƒh’Ç‰Á‚µ‚½Œã‚Ìƒe[ƒuƒ‹«
+
+MariaDB [(none)]> SELECT * FROM moeiwast_eiwatest_DB01.test_table;
++---------+----------------------+---------+-------------+
+| INT_NUM | NAME_STR             | DBL_NUM | CREATE_DATE |
++---------+----------------------+---------+-------------+
+|       1 | ƒeƒXƒg‘¾˜Y           | 123.456 | 2010-01-01  |
+|       2 | ‚`‚a‚b‚c‚d‚e‚f       |   0.456 | 2013-02-02  |
+|       3 | ABCDEFG              | 999.999 | 2015-03-03  |
+|       4 | ‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O |    NULL | 2015-04-04  |
+|    1192 | —é–ØL‹C             | 539.020 | 2017-01-01  |
+|   99999 | 1234567890           |   0.000 | 2016-05-05  |
++---------+----------------------+---------+-------------+
+6 rows in set (0.00 sec)
+
+MariaDB [(none)]>
+
+
+–â2
+MariaDB [(none)]> UPDATE moeiwast_eiwatest_DB01.test_table SET CREATE_DATE = '20
+16/07/23' WHERE INT_NUM = '1192';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [(none)]>
+
+«“ú•tXVŒã«
+
+MariaDB [(none)]> SELECT * FROM moeiwast_eiwatest_DB01.test_table;
++---------+----------------------+---------+-------------+
+| INT_NUM | NAME_STR             | DBL_NUM | CREATE_DATE |
++---------+----------------------+---------+-------------+
+|       1 | ƒeƒXƒg‘¾˜Y           | 123.456 | 2010-01-01  |
+|       2 | ‚`‚a‚b‚c‚d‚e‚f       |   0.456 | 2013-02-02  |
+|       3 | ABCDEFG              | 999.999 | 2015-03-03  |
+|       4 | ‚P‚Q‚R‚S‚T‚U‚V‚W‚X‚O |    NULL | 2015-04-04  |
+|    1192 | —é–ØL‹C             | 539.020 | 2016-07-23  |
+|   99999 | 1234567890           |   0.000 | 2016-05-05  |
++---------+----------------------+---------+-------------+
+6 rows in set (0.00 sec)
+
+MariaDB [(none)]>
+
+
